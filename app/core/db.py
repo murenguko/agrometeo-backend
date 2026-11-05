@@ -11,6 +11,7 @@ class Client:
     def __init__(self):
         self.__client = MongoClient(str(os.getenv("DB_CONNECTION_STRING")))
         self.__db = self.__client[str(os.getenv("DB"))]
+        self.__db["users"].create_index("username", unique=True)
 
     def get_collection(self, collection):
         return self.__db[collection]
