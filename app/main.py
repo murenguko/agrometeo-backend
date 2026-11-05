@@ -14,7 +14,7 @@ origins = [
     "http://localhost",
     "http://localhost:8080",
     "http://localhost:5176"
-    "https://agrometeo-backend.vercel.app"
+    "https://agrometeo-frontend.vercel.app"
 ]
 
 
